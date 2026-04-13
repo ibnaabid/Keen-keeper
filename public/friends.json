@@ -6,7 +6,7 @@
     "email": "rahim.khan@email.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["college", "best friend"],
+    "tags": ["college"],
     "bio": "My university roommate. We used to play cricket together every evening.",
     "goal": 14,
     "next_due_date": "2025-04-25"
@@ -18,7 +18,7 @@
     "email": "ayesha.rahman@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["family", "cousin"],
+    "tags": ["family"],
     "bio": "My cousin sister who always supports me in difficult times.",
     "goal": 10,
     "next_due_date": "2025-04-18"
@@ -30,7 +30,7 @@
     "email": "samiul.dev@outlook.com",
     "days_since_contact": 9,
     "status": "almost due",
-    "tags": ["work", "colleague"],
+    "tags": ["work"],
     "bio": "Senior developer who mentored me in my first job.",
     "goal": 7,
     "next_due_date": "2025-04-22"
@@ -42,7 +42,7 @@
     "email": "nadia.akter95@yahoo.com",
     "days_since_contact": 25,
     "status": "overdue",
-    "tags": ["school", "childhood"],
+    "tags": ["school"],
     "bio": "Childhood friend from school. We grew up in the same neighborhood.",
     "goal": 14,
     "next_due_date": "2025-04-10"
@@ -54,7 +54,7 @@
     "email": "fahim.hossain@proton.me",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["gym", "friend"],
+    "tags": ["gym"],
     "bio": "Gym partner. We push each other to stay consistent with fitness.",
     "goal": 5,
     "next_due_date": "2025-04-16"
@@ -66,7 +66,7 @@
     "email": "tanzila.parvin@gmail.com",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["neighbor", "friend"],
+    "tags": ["neighbor"],
     "bio": "My neighbor who is always ready to help with anything.",
     "goal": 10,
     "next_due_date": "2025-04-20"
@@ -78,7 +78,7 @@
     "email": "imran.ahmed.bd@hotmail.com",
     "days_since_contact": 31,
     "status": "overdue",
-    "tags": ["business", "mentor"],
+    "tags": ["business"],
     "bio": "My business mentor who guided me when I started freelancing.",
     "goal": 15,
     "next_due_date": "2025-04-05"
