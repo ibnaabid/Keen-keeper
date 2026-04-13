@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Khan",
+    "picture": "https://i.pravatar.cc/300?u=rahim",
+    "email": "rahim.khan@email.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "best friend"],
+    "bio": "My university roommate. We used to play cricket together every evening.",
+    "goal": 14,
+    "next_due_date": "2025-04-25"
+  },
+  {
+    "id": 2,
+    "name": "Ayesha Rahman",
+    "picture": "https://i.pravatar.cc/300?u=ayesha",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["family", "cousin"],
+    "bio": "My cousin sister who always supports me in difficult times.",
+    "goal": 10,
+    "next_due_date": "2025-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Samiul Islam",
+    "picture": "https://i.pravatar.cc/300?u=samiul",
+    "email": "samiul.dev@outlook.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["work", "colleague"],
+    "bio": "Senior developer who mentored me in my first job.",
+    "goal": 7,
+    "next_due_date": "2025-04-22"
+  },
+  {
+    "id": 4,
+    "name": "Nadia Akter",
+    "picture": "https://i.pravatar.cc/300?u=nadia",
+    "email": "nadia.akter95@yahoo.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["school", "childhood"],
+    "bio": "Childhood friend from school. We grew up in the same neighborhood.",
+    "goal": 14,
+    "next_due_date": "2025-04-10"
+  },
+  {
+    "id": 5,
+    "name": "Fahim Hossain",
+    "picture": "https://i.pravatar.cc/300?u=fahim",
+    "email": "fahim.hossain@proton.me",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["gym", "friend"],
+    "bio": "Gym partner. We push each other to stay consistent with fitness.",
+    "goal": 5,
+    "next_due_date": "2025-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Tanzila Parvin",
+    "picture": "https://i.pravatar.cc/300?u=tanzila",
+    "email": "tanzila.parvin@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["neighbor", "friend"],
+    "bio": "My neighbor who is always ready to help with anything.",
+    "goal": 10,
+    "next_due_date": "2025-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Imran Ahmed",
+    "picture": "https://i.pravatar.cc/300?u=imran",
+    "email": "imran.ahmed.bd@hotmail.com",
+    "days_since_contact": 31,
+    "status": "overdue",
+    "tags": ["business", "mentor"],
+    "bio": "My business mentor who guided me when I started freelancing.",
+    "goal": 15,
+    "next_due_date": "2025-04-05"
+  }
+]
