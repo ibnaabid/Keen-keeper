@@ -4,6 +4,7 @@ import Banner from "./banner/page";
 import Count from "./Card/page";
 // import CardData from "./CardDataApi/page";
 import CardApi from "./CardDataApi/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 <Banner></Banner>
 <Count></Count>
 <CardApi></CardApi>
+{/* <Footer></Footer> */}
 
 </>
   );
