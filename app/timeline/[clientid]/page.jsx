@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ClientServer from "./ClientServer";
 
 const DynamicCard = async ({ params }) => {
   const { clientid } = await params;
@@ -72,10 +73,8 @@ const DynamicCard = async ({ params }) => {
       <strong>Tags:</strong> {data.tags}
     </div>
 
- <div className="mt-10 flex gap-4 px-3 py-5">
-    <button className="btn btn-soft btn-active text-2xl font-bold">Call</button>
-    <button className="btn btn-soft btn-active text-2xl font-bold">Text</button>
-    <button className="btn btn-soft btn-active text-2xl font-bold">Video</button>
+ <div className="mt-10 flex gap-5 px-3 py-5">
+<ClientServer></ClientServer>
  </div>
 
   </div>

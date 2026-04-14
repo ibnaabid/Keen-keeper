@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div>
-            <div className="font-bold mx-auto text-center  pt-7">
+            <div className="font-bold mx-auto text-center  mb-17">
                 <h2 className="text-3xl ">Friends to keep close in your life</h2>
                 <p className="text-gray-400 pt-4">Your personal shelf of meaningful connections. Browse, tend, and nurture the
 relationships that matter most.</p>
