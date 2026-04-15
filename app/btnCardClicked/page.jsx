@@ -1,51 +1,59 @@
 "use client";
 import { useState } from "react";
-import { useTabs } from "../context/Contextapi";
 import ClientServer from "./ClientServer";
 import Image from "next/image";
 
 const ClientPart = ({ data }) => {
-  const { callList, textList, videoList } = useTabs();
   const [activeType, setActiveType] = useState("");
 
   return (
-    <div className="p-10">
-
-      <ClientServer data={data} setActiveType={setActiveType} />
-
-      <div className="grid grid-cols-3 gap-5 mt-10">
-
-        {activeType === "" && <h2>Click a button to show data</h2>}
-
-        {activeType === "call" && callList.length === 0 && <h2>No Call Data</h2>}
-        {activeType === "text" && textList.length === 0 && <h2>No Text Data</h2>}
-        {activeType === "video" && videoList.length === 0 && <h2>No Video Data</h2>}
-
-        {activeType === "call" &&
-          callList.map((item) => (
-            <div key={item.id}>
-              <Image src={item.picture} alt="" width={150} height={150} />
-              <h2>{item.name}</h2>
-            </div>
-          ))}
-
-        {activeType === "text" &&
-          textList.map((item) => (
-            <div key={item.id}>
-              <Image src={item.picture} alt="" width={150} height={150} />
-              <h2>{item.name}</h2>
-            </div>
-          ))}
-
-        {activeType === "video" &&
-          videoList.map((item) => (
-            <div key={item.id}>
-              <Image src={item.picture} alt="" width={150} height={150} />
-              <h2>{item.name}</h2>
-            </div>
-          ))}
-
+    <div className="p-10 max-w-5xl mx-auto">
+      {/* Friend Info */}
+      <div className="flex gap-6 items-center mb-10">
+        <Image
+          src={data.picture}
+          alt={data.name}
+          width={120}
+          height={120}
+          className="rounded-full"
+        />
+        <div>
+          <h1 className="text-3xl font-bold">{data.name}</h1>
+          <p className="text-gray-500">{data.email}</p>
+          <p className="mt-2">{data.bio}</p>
+          <div className="flex gap-2 mt-2">
+            {data.tags.map((tag, i) => (
+              <span key={i} className="badge badge-outline">{tag}</span>
+            ))}
+          </div>
+          <span className={`badge mt-2 ${
+            data.status === "overdue" ? "badge-error" :
+            data.status === "almost due" ? "badge-warning" :
+            "badge-success"
+          }`}>
+            {data.status}
+          </span>
+        </div>
       </div>
+
+      {/* Stats Cards */}
+      <div className="grid grid-cols-3 gap-4 mb-8">
+        <div className="card bg-base-200 p-4 text-center">
+          <p className="text-sm text-gray-500">Days Since Contact</p>
+          <p className="text-2xl font-bold">{data.days_since_contact}</p>
+        </div>
+        <div className="card bg-base-200 p-4 text-center">
+          <p className="text-sm text-gray-500">Goal (days)</p>
+          <p className="text-2xl font-bold">{data.goal}</p>
+        </div>
+        <div className="card bg-base-200 p-4 text-center">
+          <p className="text-sm text-gray-500">Next Due Date</p>
+          <p className="text-2xl font-bold">{data.next_due_date}</p>
+        </div>
+      </div>
+
+      {/* Call, Text, Video Buttons */}
+      <ClientServer data={data} setActiveType={setActiveType} />
     </div>
   );
 };

@@ -3,50 +3,32 @@ import { showToast } from "nextjs-toast-notify";
 import { useTabs } from "../../context/Contextapi";
 
 const ClientServer = ({ data, setActiveType }) => {
-
-  const { addToCall, callList, videoList, textList, addToText, addToVideo } = useTabs();
+  const { addToCall, addToText, addToVideo } = useTabs();
 
   const handleCall = () => {
-    setActiveType("call");
-
-    const isExist = callList.find(item => item.id === data.id);
-    if (!isExist) {
-      addToCall(data); 
-      showToast.success("Added to Call History");
-    } else {
-      showToast.error("Already Added!");
-    }
+    if (setActiveType) setActiveType("call"); // ← এইটুকু change
+    addToCall(data);
+    showToast.success(`Call with ${data.name} logged!`);
   };
 
   const handleText = () => {
-    setActiveType("text");
-
-    const isExist = textList.find(item => item.id === data.id);
-    if (!isExist) {
-      addToText(data); 
-      showToast.success("Added to Text");
-    } else {
-      showToast.error("Already Added!");
-    }
+    if (setActiveType)
+       setActiveType("text"); // ← এইটুকু change
+    addToText(data);
+    showToast.success(`Text with ${data.name} logged!`);
   };
 
   const handleVideo = () => {
-    setActiveType("video");
-
-    const isExist = videoList.find(item => item.id === data.id);
-    if (!isExist) {
-      addToVideo(data); 
-      showToast.success("Added to Video");
-    } else {
-      showToast.error("Already Added!");
-    }
+    if (setActiveType) setActiveType("video"); // ← এইটুকু change
+    addToVideo(data);
+    showToast.success(`Video with ${data.name} logged!`);
   };
 
   return (
     <div className="flex gap-4">
-      <button onClick={handleCall} className="btn">Call</button>
-      <button onClick={handleText} className="btn">Text</button>
-      <button onClick={handleVideo} className="btn">Video</button>
+      <button onClick={handleCall} className="btn btn-primary">📞 Call</button>
+      <button onClick={handleText} className="btn btn-secondary">💬 Text</button>
+      <button onClick={handleVideo} className="btn btn-accent">🎥 Video</button>
     </div>
   );
 };

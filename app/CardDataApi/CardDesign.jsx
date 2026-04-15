@@ -19,9 +19,7 @@ const CardDesign = ({ allClient }) => {
   };
 
   return (
-    <Link href={`/timeline/${id}`} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-base-200">
-      
-      <figure className="relative h-64 bg-base-200">
+<Link href={`/timeline/${id}`} className="relative card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-base-200">      <figure className="relative h-64 bg-base-200">
         <Image
           src={picture}
           alt={name}

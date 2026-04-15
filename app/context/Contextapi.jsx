@@ -1,5 +1,4 @@
 "use client";
-// import { showToast } from "nextjs-toast-notify";
 import { createContext, useContext, useState } from "react";
 
 const TabContext = createContext();
@@ -25,11 +24,14 @@ export const TabProvider = ({ children }) => {
     if (!callList.find((item) => item.id === app.id)) {
       setCallList([...callList, app]);
     }
-  
   };
 
   return (
-    <TabContext.Provider value={{ textList, addToText, videoList, addToVideo, callList, addToCall }}>
+    <TabContext.Provider value={{ 
+      textList, addToText, 
+      videoList, addToVideo, 
+      callList, addToCall 
+    }}>
       {children}
     </TabContext.Provider>
   );
