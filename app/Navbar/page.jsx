@@ -1,5 +1,6 @@
 // "use client";
 
+import { ChartNoAxesGantt, House, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -27,22 +28,23 @@ const Navbar = () => {
 
             <Link
               href="/"
-              className="px-4 py-2 rounded-lg bg-gray-500 shadow hover:bg-blue-500 hover:text-white transition duration-300"
-            >
+              className="px-2 py-2 flex gap-3 rounded-lg bg-gray-500 shadow hover:bg-blue-500 hover:text-white transition duration-300"
+            >    <House />
               Home
             </Link>
 
             <Link
               href="/timeline"
-              className="px-4 py-2 rounded-lg bg-gray-500 shadow hover:bg-purple-500 hover:text-white transition duration-300"
+              className="px-4 py-2 flex gap-3 rounded-lg bg-gray-500 shadow hover:bg-purple-500 hover:text-white transition duration-300"
             >
+    <ChartNoAxesGantt/>
               TimeLine
             </Link>
 
             <Link
               href="/starts"
-              className="px-4 py-2 rounded-lg bg-gray-500 shadow hover:bg-green-500 hover:text-white transition duration-300"
-            >
+              className="px-4 py-2  flex gap-3 rounded-lg bg-gray-500 shadow hover:bg-green-500 hover:text-white transition duration-300"
+            >  <Sparkles />
               Starts
             </Link>
 

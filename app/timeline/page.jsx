@@ -28,7 +28,7 @@ const TimelinePage = () => {
 
   return (
     <div className="max-w-3xl mx-auto mt-10 mb-12 px-4">
-      <h1 className="text-3xl font-bold text-center mb-8"> <br />timline</h1>
+      <h1 className="text-3xl font-bold text-center mb-8"> <br />timeline</h1>
 
       {allEntries.length === 0 ? (
         <p className="text-center text-gray-400 text-lg">
