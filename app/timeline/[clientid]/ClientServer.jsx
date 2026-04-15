@@ -1,11 +1,10 @@
 "use client"
-
-import { toast } from "react-toastify";
+import { showToast } from "nextjs-toast-notify";
 
 const ClientServer = () => {
     const handler=()=>{
-        toast.success("guam")
-        alert("click")
+      
+        showToast.success("add to page")
     }
     return (
         <div>

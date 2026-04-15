@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext, useState } from "react";
-import toast from "react-hot-toast";
+
+import { showToast } from "nextjs-toast-notify";
 
 const TabContext = createContext();
 
@@ -14,7 +15,7 @@ export const TabProvider = ({ children }) => {
     const isExist = textList.find((item) => item.id === app.id);
     if (!isExist) {
       setTextList([...textList, app]);
-      toast.success("Added to Text List!");
+      showToast.success("Added to Text List!");
     } else {
       toast.error("Already in Text List");
     }
@@ -24,7 +25,7 @@ export const TabProvider = ({ children }) => {
     const isExist = videoList.find((item) => item.id === app.id);
     if (!isExist) {
       setVideoList([...videoList, app]);
-      toast.success("Added to Video List!");
+      showToast.success("Added to Video List!");
     } else {
       toast.error("Already in Video List");
     }
@@ -34,7 +35,7 @@ export const TabProvider = ({ children }) => {
     const isExist = callList.find((item) => item.id === app.id);
     if (!isExist) {
       setCallList([...callList, app]);
-      toast.success("Added to Call List!");
+      showToast.success("Added to Call List!");
     } else {
       toast.error("Already in Call List");
     }
@@ -43,9 +44,9 @@ export const TabProvider = ({ children }) => {
 
   return (
     <TabContext.Provider value={{ 
-        textList, addToText, removeText,
-        videoList, addToVideo, removeVideo,
-        callList, addToCall, removeCall 
+        textList, addToText,
+        videoList, addToVideo,
+        callList, addToCall 
     }}>
       {children}
     </TabContext.Provider>
