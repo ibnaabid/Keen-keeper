@@ -13,7 +13,8 @@ async function getFriends() {
 }
 
 const CardApi = async () => {
-  const response = await getFriends();  
+  const response = await getFriends(); 
+  console.log(response) 
 
   return (
     <div className="p-8 bg-base-200 min-h-screen">

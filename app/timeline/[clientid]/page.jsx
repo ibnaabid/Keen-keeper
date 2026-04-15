@@ -74,7 +74,7 @@ const DynamicCard = async ({ params }) => {
     </div>
 
  <div className="mt-10 flex gap-5 px-3 py-5">
-<ClientServer></ClientServer>
+<ClientServer data={data}></ClientServer>
  </div>
 
   </div>
