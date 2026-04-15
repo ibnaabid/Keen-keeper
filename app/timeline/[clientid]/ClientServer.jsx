@@ -1,6 +1,10 @@
 "use client"
+
+import { toast } from "react-toastify";
+
 const ClientServer = () => {
     const handler=()=>{
+        toast.success("guam")
         alert("click")
     }
     return (
