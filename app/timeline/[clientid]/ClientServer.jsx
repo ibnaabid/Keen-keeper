@@ -6,7 +6,7 @@ import { MessageSquare, Phone, Video } from "lucide-react";
 const ClientServer = ({ data, setActiveType }) => {
   const { addToCall, addToText, addToVideo, callList, textList, videoList } = useTabs();
 
-  // ১. কল হ্যান্ডলার
+  
   const handleCall = () => {
     const isExist = callList.find(item => item.id === data.id);
     if (!isExist) {
@@ -18,7 +18,6 @@ const ClientServer = ({ data, setActiveType }) => {
     }
   };
 
-  // ২. টেক্সট হ্যান্ডলার
   const handleText = () => {
     const isExist = textList.find(item => item.id === data.id);
     if (!isExist) {
@@ -30,7 +29,6 @@ const ClientServer = ({ data, setActiveType }) => {
     }
   };
 
-  // ৩. ভিডিও হ্যান্ডলার
   const handleVideo = () => {
     const isExist = videoList.find(item => item.id === data.id);
     if (!isExist) {
@@ -44,17 +42,15 @@ const ClientServer = ({ data, setActiveType }) => {
 
   return (
     <div className="flex gap-4">
-      {/* Call Button */}
+   
       <button onClick={handleCall} className="btn btn-primary flex items-center gap-2">
         <Phone size={18} /> Call
       </button>
 
-      {/* Text Button */}
       <button onClick={handleText} className="btn btn-secondary flex items-center gap-2">
         <MessageSquare size={18} /> Text
       </button>
 
-      {/* Video Button */}
       <button onClick={handleVideo} className="btn btn-accent flex items-center gap-2 text-white">
         <Video size={18} /> Video
       </button>

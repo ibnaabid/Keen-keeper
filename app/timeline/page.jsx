@@ -73,11 +73,8 @@ const TimelinePage = () => {
     </div>
   </div>
 
-  {/* Right Side: Status Indicator */}
-  {/* <div className="h-3 w-3 rounded-full bg-red-400 animate-pulse"></div> */}
 </div>
 
-              {/* Type Badge */}
               <div className={`badge ${
                 entry.type === "call" ? "badge-primary" :
                 entry.type === "text" ? "badge-secondary" :

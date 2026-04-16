@@ -1,4 +1,5 @@
 "use client";
+
 import { createContext, useContext, useState } from "react";
 
 const TabContext = createContext();
@@ -8,6 +9,7 @@ export const TabProvider = ({ children }) => {
   const [videoList, setVideoList] = useState([]);
   const [callList, setCallList] = useState([]);
 
+ 
   const addToText = (app) => {
     if (!textList.find((item) => item.id === app.id)) {
       setTextList([...textList, app]);
