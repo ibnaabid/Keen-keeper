@@ -15,7 +15,7 @@ export default function ContactPieChart({ isAnimationActive = true }) {
       <h2 className="text-xl text-gray-500 font-bold mb-6 mt-5">By Interaction Type </h2>
       
       <div className="h-80 w-full">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer minWidth="100%" minHeight="100%">
           <PieChart>
             <Pie
               data={data}

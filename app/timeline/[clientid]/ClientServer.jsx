@@ -3,7 +3,7 @@ import { showToast } from "nextjs-toast-notify";
 import { useTabs } from "../../context/Contextapi";
 import { MessageSquare, Phone, Video } from "lucide-react";
 
-const ClientServer = ({ data, setActiveType }) => {
+const ClientServer = ({ data,activeType ,setActiveType }) => {
   const { addToCall, addToText, addToVideo, callList, textList, videoList } = useTabs();
 
   
